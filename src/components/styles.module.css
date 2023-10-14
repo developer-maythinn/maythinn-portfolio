@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Nabla&family=Rubik+Moonrocks&family=Titan+One&display=swap");
+
+/* font-family: 'Lilita One', cursive;
+font-family: 'Nabla', cursive;
+font-family: 'Rubik Moonrocks', cursive;
+font-family: 'Titan One', cursive; */
+
+.name {
+  font-family: "Lilita One", cursive !important;
+  /* font-family: "Rubik Moonrocks", cursive !important; */
+  /* font-family: "Titan One", cursive !important; */
+  color: #fff;
+  height: 140px;
+  left: 0;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: capitalize;
+  display: inline;
+  width: 100%;
+  /* animation: move linear 2s 1; */
+  /* text-shadow: -4px 4px 0 #8d94fa, -3px 3px 0 #8d94fa, 2px -2px 0 #8d94fa,
+    1px -1px 0 #8d94fa; */
+  text-shadow: 4px 4px 0 #5f4a9e, 3px 3px 0 #5f4a9e, 2px -2px 0 #5f4a9e,
+    1px -1px 0 #5f4a9e, -1px 1px 0 #5f4a9e;
+}
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 #8d94fa, 3px -3px 0 #8d94fa, 2px -2px 0 #8d94fa,
+      1px -1px 0 #8d94fa, -4px 4px 0 #2b2336, -3px 3px 0 #2b2336,
+      -2px 2px 0 #2b2336, -1px 1px 0 #2b2336;
+  }
+  25% {
+    text-shadow: -4px -4px 0 #2b2336, -3px -3px 0 #2b2336, -2px -2px 0 #2b2336,
+      -1px -1px 0 #2b2336, 4px 4px 0 #8d94fa, 3px 3px 0 #8d94fa,
+      2px 2px 0 #8d94fa, 1px 1px 0 #8d94fa;
+  }
+  50% {
+    text-shadow: -4px 4px 0 #8d94fa, -3px 3px 0 #8d94fa, -2px 2px 0 #8d94fa,
+      -1px 1px 0 #8d94fa, 4px -4px 0 #2b2336, 3px -3px 0 #2b2336,
+      2px -2px 0 #2b2336, 1px -1px 0 #2b2336;
+  }
+  75% {
+    text-shadow: 4px 4px 0 #2b2336, 3px 3px 0 #2b2336, 2px 2px 0 #2b2336,
+      1px 1px 0 #2b2336, -4px -4px 0 #8d94fa, -3px -3px 0 #8d94fa,
+      -2px -2px 0 #8d94fa, -1px -1px 0 #8d94fa;
+  }
+  100% {
+    text-shadow: 4px -4px 0 #8d94fa, 3px -3px 0 #8d94fa, 2px -2px 0 #8d94fa,
+      1px -1px 0 #8d94fa, -4px 4px 0 #2b2336, -3px 3px 0 #2b2336,
+      -2px 2px 0 #2b2336, -1px 1px 0 #2b2336;
+  }
+}
+/* @font-face {
+  font-family: "RubikMoonrocks";
+  src: url("/RubikMoonrocks-Regular.ttf") format("truetype");
+}
+.name {
+  font-family: "RubikMoonrocks", cursive;
+  color: red;
+} */
