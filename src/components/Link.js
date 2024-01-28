@@ -1,10 +1,10 @@
-import * as React from "react";
-import PropTypes from "prop-types";
-import clsx from "clsx";
-import NextLink from "next/link";
 import MuiLink from "@mui/material/Link";
 import { styled } from "@mui/material/styles";
+import clsx from "clsx";
+import NextLink from "next/link";
 import { useRouter } from "next/navigation";
+import PropTypes from "prop-types";
+import * as React from "react";
 
 // Add support for the sx prop for consistency with the other branches.
 const Anchor = styled("a")({});
@@ -42,18 +42,18 @@ export const NextLinkComposed = React.forwardRef(function NextLinkComposed(
   );
 });
 
-NextLinkComposed.propTypes = {
-  href: PropTypes.any,
-  legacyBehavior: PropTypes.bool,
-  linkAs: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  locale: PropTypes.string,
-  passHref: PropTypes.bool,
-  prefetch: PropTypes.bool,
-  replace: PropTypes.bool,
-  scroll: PropTypes.bool,
-  shallow: PropTypes.bool,
-  to: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
-};
+// NextLinkComposed.propTypes = {
+//   href: PropTypes.any,
+//   legacyBehavior: PropTypes.bool,
+//   linkAs: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+//   locale: PropTypes.string,
+//   passHref: PropTypes.bool,
+//   prefetch: PropTypes.bool,
+//   replace: PropTypes.bool,
+//   scroll: PropTypes.bool,
+//   shallow: PropTypes.bool,
+//   to: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
+// };
 
 // A styled version of the Next.js Link component:
 // https://nextjs.org/docs/api-reference/next/link

@@ -6,19 +6,7 @@ import { circleStyles } from "./styles/commonStyles";
 function BackgroundCircles() {
   return (
     <>
-      {/* <Box sx={{ width: "100%", height: "100vh" }}>
-        <Box
-          sx={{
-            ...circleStyles(
-              "100%",
-              "100%",
-              "url(https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)",
-              { backgroundSize: "cover" }
-            ),
-          }}
-        ></Box>
-      </Box> */}
-      <Box sx={{ width: "100%", height: "100vh" }}>
+      <Box sx={{ width: "100%", height: "100vh", overflow: "hidden" }}>
         <Box
           sx={{
             ...circleStyles(
@@ -92,8 +80,8 @@ function BackgroundCircles() {
         <Box
           sx={{
             ...circleStyles(
-              "120px",
-              "120px",
+              "18vw",
+              "20vh",
               "linear-gradient(120deg,hsl(299deg 59% 67%) 0%,hsl(300deg 51% 64%) 10%,hsl(301deg 45% 62%) 20%,hsl(302deg 40% 59%) 30%,hsl(304deg 35% 56%) 40%,hsl(306deg 30% 52%) 50%,hsl(309deg 27% 49%) 60%,hsl(314deg 26% 45%) 70%,hsl(321deg 25% 42%) 80%,hsl(333deg 24% 37%) 90%,hsl(0deg 22% 32%) 100%)",
               "blur(50px)",
               {

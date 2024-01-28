@@ -1,30 +1,44 @@
 "use client";
-import { Box, Grid } from "@mui/material";
-import Image from "next/image";
+import { Box } from "@mui/material";
 import React from "react";
-import CustomAppBar from "./CustomAppbar";
+import CustomMainSection from "./CustomMainSection";
 
 function GlassCard() {
   return (
     <Box
       sx={{
-        width: "80%",
-        height: "85vh",
-        background: "rgba(#fff,0.8)",
+        width: { xs: "100%", sm: "80%" },
+        height: { xs: "auto", sm: "85vh" },
         position: "absolute",
         zIndex: 1,
         inset: 0,
         margin: "auto",
-        borderRadius: "30px",
-        backdropFilter: "blur(140px)",
-        background: "rgba( 255, 255, 255, 0.25 )",
-        boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
+        borderRadius: { xs: "initial", sm: "30px" },
+        // backdropFilter: "blur(140px)",
+        background: { xs: "transparent", sm: "rgba( 255, 255, 255, 0.25 )" },
+        boxShadow: { xs: 0, sm: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )" },
         backdropFilter: "blur( 6.5px )",
-        border: "1px solid #fff",
+        border: { xs: 0, sm: "1px solid #fff" },
         overflow: "hidden",
       }}
+      // sx={{
+      //   width: "80%",
+      //   height: "85vh",
+      //   position: "absolute",
+      //   zIndex: 1,
+      //   inset: 0,
+      //   margin: "auto",
+      //   borderRadius: { xs: "initial", sm: "30px" },
+      //   background: " rgba(255, 255, 255, 0.25)",
+      //   boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
+      //   backdropFilter: "blur( 6.5px )",
+      //   border: "1px solid #fff",
+      //   overflow: "hidden",
+      // }}
     >
-      <CustomAppBar />
+      <Box>
+        <CustomMainSection />
+      </Box>
     </Box>
   );
 }

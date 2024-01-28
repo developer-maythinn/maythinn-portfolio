@@ -15,7 +15,7 @@ export const bgImageStyles = (width, height, bgColor, position) => {
     height,
     // borderRadius: "50%",
     background: bgColor,
-    filter: "blur(120px)",
+    // filter: "blur(120px)",
     position: "absolute",
     ...position,
   };

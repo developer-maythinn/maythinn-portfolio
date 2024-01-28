@@ -1,25 +1,30 @@
-import { Roboto } from 'next/font/google';
-import { createTheme } from '@mui/material/styles';
+import { createTheme } from "@mui/material/styles";
+import { Poppins, Roboto } from "next/font/google";
 
 const roboto = Roboto({
-  weight: ['300', '400', '500', '700'],
-  subsets: ['latin'],
-  display: 'swap',
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
+const poppin = Poppins({
+  weight: ["300", "400", "500", "700", "900"],
+  subsets: ["latin"],
+  display: "swap",
 });
 
 const theme = createTheme({
   palette: {
-    mode: 'light',
+    mode: "light",
   },
   typography: {
-    fontFamily: roboto.style.fontFamily,
+    fontFamily: poppin.style.fontFamily,
   },
   components: {
     MuiAlert: {
       styleOverrides: {
         root: ({ ownerState }) => ({
-          ...(ownerState.severity === 'info' && {
-            backgroundColor: '#60a5fa',
+          ...(ownerState.severity === "info" && {
+            backgroundColor: "#60a5fa",
           }),
         }),
       },

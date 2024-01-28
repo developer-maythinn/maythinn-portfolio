@@ -1,27 +1,15 @@
-import * as React from "react";
-import Link from "next/link";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import DashboardIcon from "@mui/icons-material/Dashboard";
-import HomeIcon from "@mui/icons-material/Home";
-import StarIcon from "@mui/icons-material/Star";
-import ChecklistIcon from "@mui/icons-material/Checklist";
-import SettingsIcon from "@mui/icons-material/Settings";
-import SupportIcon from "@mui/icons-material/Support";
-import LogoutIcon from "@mui/icons-material/Logout";
-import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
-import { circle } from "@/components/styles/commonStyles";
 import BackgroundCircles from "@/components/BackgroundCircles";
 import GlassCard from "@/components/GlassCard";
+import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
+import ChecklistIcon from "@mui/icons-material/Checklist";
+import HomeIcon from "@mui/icons-material/Home";
+import LogoutIcon from "@mui/icons-material/Logout";
+import SettingsIcon from "@mui/icons-material/Settings";
+import StarIcon from "@mui/icons-material/Star";
+import SupportIcon from "@mui/icons-material/Support";
+import { Box } from "@mui/material";
+import * as React from "react";
+import "../../public/css/globalStyles.css";
 
 export const metadata = {
   title: "May Thinn Khine's Portfolio",
@@ -45,69 +33,18 @@ const PLACEHOLDER_LINKS = [
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+      </head>
       <body>
         <ThemeRegistry>
-          <BackgroundCircles />
-          <GlassCard />
-          {/* <Box sx={{ height: "1000px", width: "100%" }}>dsds</Box> */}
-
-          {/* <Box sx={{ width: "100%", height: "100vh" }}>
-            <Box sx={{ ...circle }}>d</Box>
-          </Box> */}
-          {/* <Drawer
-            sx={{
-              width: DRAWER_WIDTH,
-              flexShrink: 0,
-              "& .MuiDrawer-paper": {
-                width: DRAWER_WIDTH,
-                boxSizing: "border-box",
-                // top: ["48px", "56px", "64px"],
-                height: "auto",
-                bottom: 0,
-              },
-            }}
-            variant="permanent"
-            anchor="left"
-          >
-            <Divider />
-            <List>
-              {LINKS.map(({ text, href, icon: Icon }) => (
-                <ListItem key={href} disablePadding>
-                  <ListItemButton component={Link} href={href}>
-                    <ListItemIcon>
-                      <Icon />
-                    </ListItemIcon>
-                    <ListItemText primary={text} />
-                  </ListItemButton>
-                </ListItem>
-              ))}
-            </List>
-            <Divider sx={{ mt: "auto" }} />
-            <List>
-              {PLACEHOLDER_LINKS.map(({ text, icon: Icon }) => (
-                <ListItem key={text} disablePadding>
-                  <ListItemButton>
-                    <ListItemIcon>
-                      <Icon />
-                    </ListItemIcon>
-                    <ListItemText primary={text} />
-                  </ListItemButton>
-                </ListItem>
-              ))}
-            </List>
-          </Drawer>
-          <Box
-            component="main"
-            sx={{
-              flexGrow: 1,
-              bgcolor: "background.default",
-              ml: `${DRAWER_WIDTH}px`,
-              mt: ["48px", "56px", "64px"],
-              p: 3,
-            }}
-          >
-            {children}
-          </Box> */}
+          <Box sx={{ width: "100%", height: "100vh", position: "relative" }}>
+            <BackgroundCircles />
+            <GlassCard />
+          </Box>
         </ThemeRegistry>
       </body>
     </html>
