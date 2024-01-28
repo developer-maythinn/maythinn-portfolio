@@ -68,11 +68,11 @@ function CustomNav() {
           }}
         >
           {pages.map((page, index) => (
-            <React.Fragment key={index}>
-              <MenuItem key={page} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">{page}</Typography>
-              </MenuItem>
-            </React.Fragment>
+            // <React.Fragment key={index}>
+            <MenuItem key={index} onClick={handleCloseNavMenu}>
+              <Typography textAlign="center">{page}</Typography>
+            </MenuItem>
+            // </React.Fragment>
           ))}
         </Menu>
       </Box>
@@ -84,7 +84,7 @@ function CustomNav() {
         }}
       >
         {pages.map((page, index) => (
-          <React.Fragment>
+          <React.Fragment key={index}>
             <Button
               onClick={handleCloseNavMenu}
               sx={{

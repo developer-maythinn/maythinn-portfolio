@@ -17,7 +17,7 @@ const theme = createTheme({
     mode: "light",
   },
   typography: {
-    fontFamily: poppin.style.fontFamily,
+    fontFamily: poppin.style.fontFamily || roboto.style.fontFamily,
   },
   components: {
     MuiAlert: {

@@ -142,11 +142,11 @@ export default function CustomMainSection(props) {
                 height={500}
                 sizes="(max-width: 768px) 100vw"
                 alt="Picture of the author"
-                style={{
-                  objectFit: "contain",
-                  // height: "fit-content",
-                  // width: "100%",
-                }}
+                // style={{
+                //   objectFit: "contain",
+                //   // height: "fit-content",
+                //   // width: "100%",
+                // }}
               />
             </Box>
           </Grid>

@@ -1,5 +1,6 @@
 import BackgroundCircles from "@/components/BackgroundCircles";
 import GlassCard from "@/components/GlassCard";
+import SkillSection from "@/components/SkillSection";
 import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
 import ChecklistIcon from "@mui/icons-material/Checklist";
 import HomeIcon from "@mui/icons-material/Home";
@@ -45,6 +46,7 @@ export default function RootLayout({ children }) {
             <BackgroundCircles />
             <GlassCard />
           </Box>
+          <SkillSection></SkillSection>
         </ThemeRegistry>
       </body>
     </html>
