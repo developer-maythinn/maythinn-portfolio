@@ -90,7 +90,7 @@ function CustomNav() {
               sx={{
                 my: 2,
                 mx: 1,
-                color: "#614a9e",
+                color: "#856cc9",
                 display: "block",
                 textTransform: "capitalize",
                 fontWeight: "bold",

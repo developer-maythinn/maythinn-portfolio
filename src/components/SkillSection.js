@@ -1,5 +1,5 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
-import React from "react";
+import ParentSection from "./ParentSection";
 import { ProgressBarComponent } from "./ProgressBarComponent";
 import SectionTitle from "./SectionTitle";
 
@@ -52,42 +52,36 @@ function SkillSection() {
     },
     {
       language: "Other UI(Bootstrap, etc)",
-      percent: "80",
+      percent: "70",
+    },
+    {
+      language: "Git",
+      percent: "70",
     },
   ];
   return (
     <>
-      <Container>
-        <Box
-          sx={{
-            width: "100%",
-            height: "fit-content",
-            py: 8,
-            px: 2,
-          }}
-        >
-          <SectionTitle></SectionTitle>
-          <Grid container sx={{ mt: 6 }} spacing={3}>
-            {skills &&
-              skills.length > 0 &&
-              skills.map((skill, index) => {
-                return (
-                  <Grid item xs={12} sm={6} key={index}>
-                    <Typography variant="subtitle2" sx={{ fontWeight: 600 }}>
-                      {skill.language}
-                    </Typography>
-                    <ProgressBarComponent
-                      value={skill.percent}
-                      showPercent={true}
-                      percentPosition={"end"}
-                      barHeight={1}
-                    />
-                  </Grid>
-                );
-              })}
-          </Grid>
-        </Box>
-      </Container>
+      <ParentSection caption={"Technical level"} title={"My Expertise Area"}>
+        <Grid container sx={{ mt: 6 }} spacing={3}>
+          {skills &&
+            skills.length > 0 &&
+            skills.map((skill, index) => {
+              return (
+                <Grid item xs={12} sm={6} key={index}>
+                  <Typography variant="subtitle2" sx={{ fontWeight: 600 }}>
+                    {skill.language}
+                  </Typography>
+                  <ProgressBarComponent
+                    value={skill.percent}
+                    showPercent={true}
+                    percentPosition={"end"}
+                    barHeight={1}
+                  />
+                </Grid>
+              );
+            })}
+        </Grid>
+      </ParentSection>
     </>
   );
 }

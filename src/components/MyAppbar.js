@@ -1,6 +1,7 @@
 import { Container } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
+import Image from "next/image";
 import * as React from "react";
 import CustomNav from "./CustomNav";
 import MainTitle from "./MainTitle";
@@ -34,14 +35,21 @@ function MyAppBar() {
             flexDirection: { xs: "row-reverse", md: "row" },
           }}
         >
+          <Image
+            src="/secretary-bw.png"
+            // layout="responsive"
+            width={30}
+            height={30}
+            alt="Picture of the author"
+          />
           <MainTitle
-            title="MAY&rsquo;s PORTFOLIO"
-            customStyles={{ display: { xs: "none", md: "flex" } }}
+            title="MAY THINN"
+            customStyles={{ display: { xs: "none", md: "flex" }, ml: 2 }}
           ></MainTitle>
           <CustomNav></CustomNav>
 
           <MainTitle
-            title="MAY&rsquo;s PORTFOLIO"
+            title="MAY THINN"
             customStyles={{
               display: { xs: "flex", md: "none" },
             }}

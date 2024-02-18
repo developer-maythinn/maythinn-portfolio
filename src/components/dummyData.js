@@ -1,0 +1,61 @@
+export const projects = [
+  {
+    title: "ONOW Web APP",
+    imgSrc: "/project-img/onow-pwa.png",
+    description: "This is a brief description of Project 2.",
+    techStack: [
+      "PWA",
+      "React",
+      "Next JS",
+      "Material UI",
+      "React Saga",
+      "Redux",
+      "localization",
+      "Responsive",
+    ],
+    link: "https://project2.com",
+    github: "https://github.com/yourusername/project2",
+  },
+
+  {
+    title: "Duwun",
+    imgSrc: "/project-img/duwun.png",
+    description: "This is a brief description of Project 1.",
+    techStack: [
+      "React",
+      "Next JS",
+      "Material UI",
+      "React Saga",
+      "Redux",
+      "express JS",
+    ],
+    link: "https://project1.com",
+    github: "https://github.com/yourusername/project1",
+  },
+  {
+    title: "ONOW CMS",
+    imgSrc: "/project-img/onow-cms.png",
+    description: "This is a brief description of Project 2.",
+    techStack: [
+      "React",
+      "Next JS",
+      "Material UI",
+      "React Saga",
+      "Redux",
+      "Redux toolkit",
+      "authentication",
+    ],
+    link: "https://project2.com",
+    github: "https://github.com/yourusername/project2",
+  },
+  {
+    title: "Duwun Beta PWA",
+    imgSrc: "/project-img/onow-cms.png",
+    description:
+      "This is a brief description of Project 2. description of Project 2.",
+    techStack: ["Vue", "Pwa", "vuetify"],
+    link: "https://project2.com",
+    github: "https://github.com/yourusername/project2",
+    isBlur: true,
+  },
+];

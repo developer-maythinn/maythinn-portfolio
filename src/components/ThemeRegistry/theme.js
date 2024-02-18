@@ -17,7 +17,8 @@ const theme = createTheme({
     mode: "light",
   },
   typography: {
-    fontFamily: poppin.style.fontFamily || roboto.style.fontFamily,
+    // fontFamily: poppin.style.fontFamily || roboto.style.fontFamily,
+    fontFamily: "inherit",
   },
   components: {
     MuiAlert: {
@@ -27,6 +28,23 @@ const theme = createTheme({
             backgroundColor: "#60a5fa",
           }),
         }),
+      },
+    },
+    MuiTimelineItem: {
+      styleOverrides: {
+        root: {
+          "&::before": {
+            flex: 0,
+            padding: 0,
+          },
+        },
+      },
+    },
+    MuiTimelineConnector: {
+      styleOverrides: {
+        root: {
+          height: 200,
+        },
       },
     },
   },

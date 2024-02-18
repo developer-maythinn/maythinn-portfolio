@@ -1,35 +1,28 @@
-import BackgroundCircles from "@/components/BackgroundCircles";
-import GlassCard from "@/components/GlassCard";
-import SkillSection from "@/components/SkillSection";
 import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
-import ChecklistIcon from "@mui/icons-material/Checklist";
-import HomeIcon from "@mui/icons-material/Home";
-import LogoutIcon from "@mui/icons-material/Logout";
-import SettingsIcon from "@mui/icons-material/Settings";
-import StarIcon from "@mui/icons-material/Star";
-import SupportIcon from "@mui/icons-material/Support";
-import { Box } from "@mui/material";
-import * as React from "react";
 import "../../public/css/globalStyles.css";
 
 export const metadata = {
   title: "May Thinn Khine's Portfolio",
   description: "May Thinn Khine's Portfolio",
 };
+import { Inter } from "next/font/google";
+import { Poppins, Roboto } from "next/font/google";
 
-const DRAWER_WIDTH = 240;
-
-const LINKS = [
-  { text: "Home", href: "/", icon: HomeIcon },
-  { text: "Starred", href: "/starred", icon: StarIcon },
-  { text: "Tasks", href: "/tasks", icon: ChecklistIcon },
-];
-
-const PLACEHOLDER_LINKS = [
-  { text: "Settings", icon: SettingsIcon },
-  { text: "Support", icon: SupportIcon },
-  { text: "Logout", icon: LogoutIcon },
-];
+const roboto = Roboto({
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
+const poppin = Poppins({
+  weight: ["300", "400", "500", "700", "900"],
+  subsets: ["latin"],
+  display: "swap",
+});
+// If loading a variable font, you don't need to specify the font weight
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function RootLayout({ children }) {
   return (
@@ -40,14 +33,8 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
         />
       </head>
-      <body>
-        <ThemeRegistry>
-          <Box sx={{ width: "100%", height: "100vh", position: "relative" }}>
-            <BackgroundCircles />
-            <GlassCard />
-          </Box>
-          <SkillSection></SkillSection>
-        </ThemeRegistry>
+      <body className={poppin.className}>
+        <ThemeRegistry>{children}</ThemeRegistry>
       </body>
     </html>
   );

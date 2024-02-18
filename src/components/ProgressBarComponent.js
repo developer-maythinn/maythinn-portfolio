@@ -30,11 +30,11 @@ export const ProgressBarComponent = ({
         sx={{
           backgroundColor: "#F0F1F2",
           width: "100%",
-          height: `${barHeight * 4}px` || "4px",
+          height: `${barHeight * 10}px` || "10px",
           "> span": {
-            background: `linear-gradient(90deg, #03DAC5 ${
+            background: `linear-gradient(90deg, #856cc9 ${
               100 - value
-            }%, #3697FF 100%)`,
+            }%, #b0c96c 100%)`,
           },
         }}
       />

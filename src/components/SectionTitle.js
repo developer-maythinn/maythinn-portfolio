@@ -1,12 +1,14 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 
-function SectionTitle() {
+function SectionTitle({ title, caption, customTitleStyles }) {
   return (
     <Box sx={{ textAlign: "center" }}>
-      <Typography variant="caption">Why Choose me</Typography>
-      <Typography variant="h5" sx={{ fontWeight: "700" }}>
-        My Expertise Area
+      <Typography variant="caption" sx={{ ...customTitleStyles }}>
+        {caption}
+      </Typography>
+      <Typography variant="h5" sx={{ fontWeight: "700", ...customTitleStyles }}>
+        {title}
       </Typography>
     </Box>
   );

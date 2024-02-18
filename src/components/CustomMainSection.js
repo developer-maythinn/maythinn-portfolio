@@ -113,7 +113,7 @@ export default function CustomMainSection(props) {
                     fontWeight: "900",
                     pl: 1,
                     textDecoration: "none",
-                    color: "#614a9e",
+                    color: "#856cc9",
                   }}
                   href="https://www.facebook.com/profile.php?id=100078891341055"
                 >

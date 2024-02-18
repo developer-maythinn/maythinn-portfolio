@@ -3,3 +3,24 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.custom-shape-divider-bottom-1708198882 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1708198882 svg {
+  position: relative;
+  display: block;
+  width: calc(122% + 1.3px);
+  height: 215px;
+}
+
+.custom-shape-divider-bottom-1708198882 .shape-fill {
+  fill: #856cc9;
+}

@@ -1,10 +1,10 @@
 import { Typography } from "@mui/material";
-import React from "react";
 
 function MainTitle({ title, customStyles }) {
   return (
     <>
       {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
+      {/* <Image src={"/secretary.png"} width="100" height="100"></Image> */}
 
       <Typography
         variant="h6"
