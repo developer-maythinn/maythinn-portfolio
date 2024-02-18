@@ -70,7 +70,12 @@ function page() {
         </div>
         <ExperienceSection />
       </Box>
-      <Box sx={{ position: "relative", background: "#856cc9" }}>
+      <Box
+        sx={{
+          position: "relative",
+          background: "linear-gradient(to bottom, #856cc9, transparent)",
+        }}
+      >
         <ProjectsSection></ProjectsSection>
       </Box>
     </>
