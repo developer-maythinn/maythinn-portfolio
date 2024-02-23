@@ -1,7 +1,13 @@
-import { faFacebookF, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebookF,
+  faGithub,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { GitHub } from "@mui/icons-material";
 import { Box, Tooltip } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 import { NextLinkComposed } from "./Link";
 
@@ -16,14 +22,14 @@ function SocialComponent() {
     {
       title: "Linkedin",
       icon: faLinkedinIn,
-      link: "https://www.linkedin.com/in/may-thinn-khine-27a705223/",
+      link: "https://www.linkedin.com/in/may-thinn-khine/",
       color: "#1ea1f1",
     },
     {
-      title: "Mail",
-      icon: faEnvelope,
-      link: "mailto:developer.maythinn@gmail.com",
-      color: "#2578af",
+      title: "GitHub",
+      icon: faGithub,
+      link: "https://github.com/developer-maythinn",
+      color: "#1e3050",
     },
   ];
   return (

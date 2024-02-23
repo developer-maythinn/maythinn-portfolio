@@ -47,7 +47,6 @@ function MyAppBar() {
             customStyles={{ display: { xs: "none", md: "flex" }, ml: 2 }}
           ></MainTitle>
           <CustomNav></CustomNav>
-
           <MainTitle
             title="MAY THINN"
             customStyles={{

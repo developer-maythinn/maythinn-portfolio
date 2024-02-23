@@ -103,9 +103,9 @@ export default function CustomMainSection(props) {
                 component="p"
                 sx={{ lineHeight: "28px", pt: 1, textIndent: 30, fontSize: 14 }}
               >
-                I am a Senior Frontend Developer with above 6years experience in
-                building websites for small and medium sized businesses. And
-                also founder of
+                I am a Senior Frontend Developer with over 6 years experience in
+                building websites for small and medium sized businesses using
+                with <b>React js</b> and <b>Next js</b> . And also founder of
                 <Link
                   target="_blank"
                   sx={{
@@ -119,10 +119,11 @@ export default function CustomMainSection(props) {
                 >
                   MT Coding - Tech
                 </Link>
-                .
+                . Let's collaborate and create exceptional digital experiences
+                together.
               </Typography>
               {/* **************** for social ********************** */}
-              <Box sx={{ mt: 3, display: "flex", justifyContent: "center" }}>
+              <Box sx={{ mt: 3, display: "flex" }}>
                 <SocialComponent />
               </Box>
             </Box>

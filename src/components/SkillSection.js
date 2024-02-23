@@ -39,13 +39,10 @@ function SkillSection() {
     },
 
     {
-      language: "HTML",
+      language: "HTML/CSS",
       percent: "90",
     },
-    {
-      language: "CSS",
-      percent: "90",
-    },
+
     {
       language: "SASS",
       percent: "70",

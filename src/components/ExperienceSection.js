@@ -26,6 +26,15 @@ const items = [
   },
 
   {
+    years: "2021 ~ Present",
+    company: "MT Coding - Tech",
+    position: "Founder/Instructor",
+    description:
+      "As the founder and lead instructor of MT Coding - Tech, I have had the privilege of guiding numerous students through our programs. The positive feedback received from these students underscores the effectiveness of our teaching methods and the value of the education they receive.",
+    imgSrc: "/company/mt-coding-tech.jpeg",
+    bgColor: "#18132f",
+  },
+  {
     years: "2017 ~ 2021",
     company: "IM Ringier Co., Ltd. (Duwun Media)",
     position: "Senior Frontend Developer",
@@ -35,13 +44,13 @@ const items = [
     bgColor: orange[800],
   },
   {
-    years: "2021 ~ Present",
-    company: "MT Coding - Tech",
-    position: "Founder/Instructor",
+    years: "2016 ~ 2017",
+    company: "72coder Software Co.,Ltd",
+    position: "Web Developer",
     description:
-      "As the founder and lead instructor of MT Coding - Tech, I have had the privilege of guiding numerous students through our programs. The positive feedback received from these students underscores the effectiveness of our teaching methods and the value of the education they receive.",
-    imgSrc: "/company/mt-coding-tech.jpeg",
-    bgColor: "#18132f",
+      "Working with the development team. Building web design for three projects. There are Hospital Website, NGO Web Page, Mobile Phone Shop Website(For Internship)",
+    imgSrc: "/company/72coder.jpeg",
+    // bgColor: "#18132f",
   },
 ];
 export default function ExperienceSection() {
