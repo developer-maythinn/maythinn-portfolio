@@ -1,4 +1,5 @@
 "use client";
+import styled from "@emotion/styled";
 import { Grid } from "@mui/material";
 import Box from "@mui/material/Box";
 import Slide from "@mui/material/Slide";
@@ -36,7 +37,11 @@ HideOnScroll.propTypes = {
    */
   window: PropTypes.func,
 };
-
+const TypoLang = styled(Typography)(({ theme }) => ({
+  color: theme.palette.primary.main,
+  display: "inline",
+  fontWeight: "500",
+}));
 export default function CustomMainSection(props) {
   return (
     <React.Fragment>
@@ -104,13 +109,13 @@ export default function CustomMainSection(props) {
                 sx={{ lineHeight: "28px", pt: 1, textIndent: 30, fontSize: 14 }}
               >
                 I am a Senior Frontend Developer with over 6 years experience in
-                building websites for small and medium sized businesses using
-                with <b>React js</b> and <b>Next js</b> . And also founder of
+                building websites using with <TypoLang>React js</TypoLang> and{" "}
+                <TypoLang>Next js</TypoLang> . And also a founder of
                 <Link
                   target="_blank"
                   sx={{
                     fontSize: 16,
-                    fontWeight: "900",
+                    fontWeight: "700",
                     pl: 1,
                     textDecoration: "none",
                     color: "#856cc9",
@@ -123,7 +128,13 @@ export default function CustomMainSection(props) {
                 together.
               </Typography>
               {/* **************** for social ********************** */}
-              <Box sx={{ mt: 3, display: "flex" }}>
+              <Box
+                sx={{
+                  mt: 3,
+                  display: "flex",
+                  justifyContent: { xs: "center", md: "flex-start" },
+                }}
+              >
                 <SocialComponent />
               </Box>
             </Box>

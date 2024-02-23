@@ -80,7 +80,8 @@ function CustomNav() {
         sx={{
           flexGrow: 1,
           display: { xs: "none", sm: "flex" },
-          justifyContent: { sm: "flex-end" },
+          // display: "flex",
+          justifyContent: { sm: "center" },
         }}
       >
         {pages.map((page, index) => (

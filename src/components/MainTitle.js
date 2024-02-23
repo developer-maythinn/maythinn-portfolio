@@ -17,6 +17,7 @@ function MainTitle({ title, customStyles }) {
           color: "inherit",
           textDecoration: "none",
           textTransform: "uppercase",
+          wordSpacing: "-5px",
           ...customStyles,
         }}
       >

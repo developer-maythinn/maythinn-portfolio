@@ -31,28 +31,30 @@ function MyAppBar() {
         <Toolbar
           disableGutters
           sx={{
-            justifyContent: "space-between",
+            // justifyContent: "space-between",
+            justifyContent: "center",
+            // mt: 3,
             flexDirection: { xs: "row-reverse", md: "row" },
           }}
         >
-          <Image
+          {/* <Image
             src="/secretary-bw.png"
             // layout="responsive"
             width={30}
             height={30}
             alt="Picture of the author"
-          />
-          <MainTitle
+          /> */}
+          {/* <MainTitle
             title="MAY THINN"
             customStyles={{ display: { xs: "none", md: "flex" }, ml: 2 }}
-          ></MainTitle>
+          ></MainTitle> */}
           <CustomNav></CustomNav>
-          <MainTitle
+          {/* <MainTitle
             title="MAY THINN"
             customStyles={{
               display: { xs: "flex", md: "none" },
             }}
-          ></MainTitle>
+          ></MainTitle> */}
         </Toolbar>
       </Container>
     </AppBar>
