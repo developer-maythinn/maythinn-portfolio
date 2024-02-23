@@ -62,7 +62,7 @@ export default function ExperienceSection() {
     <ParentSection caption={"Why Choose me"} title={"My Work Experience"}>
       <Grid container sx={{ my: 6 }}>
         <Grid item>
-          <Timeline position={timelinePosition}>
+          <Timeline position={timelinePosition} sx={{ p: { xs: 0, sm: 2 } }}>
             {items &&
               items.map((item, index) => {
                 return (
