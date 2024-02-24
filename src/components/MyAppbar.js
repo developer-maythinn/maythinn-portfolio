@@ -33,11 +33,9 @@ function MyAppBar() {
           sx={{
             justifyContent: "space-between",
             justifyContent: "center",
-            // mt: 3,
-            flexDirection: { xs: "row-reverse", md: "row" },
           }}
         >
-          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ display: "flex" }}>
             <Image
               src="/secretary-bw.png"
               // layout="responsive"
@@ -45,19 +43,15 @@ function MyAppBar() {
               height={30}
               alt="Picture of the author"
             />
+            <MainTitle
+              title="MAY THINN"
+              customStyles={{
+                ml: 2,
+              }}
+            ></MainTitle>
           </Box>
 
-          <MainTitle
-            title="MAY THINN"
-            customStyles={{ display: { xs: "none", md: "flex" }, ml: 2 }}
-          ></MainTitle>
           <CustomNav></CustomNav>
-          <MainTitle
-            title="MAY THINN"
-            customStyles={{
-              display: { xs: "flex", md: "none" },
-            }}
-          ></MainTitle>
         </Toolbar>
       </Container>
     </AppBar>

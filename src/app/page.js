@@ -49,7 +49,7 @@ function page(props) {
         <ProjectsSection></ProjectsSection>
       </Box>
       <ScrollTop {...props}>
-        <Fab size="small" aria-label="scroll back to top">
+        <Fab size="small" aria-label="scroll back to top" color="primary">
           <KeyboardArrowUpIcon />
         </Fab>
       </ScrollTop>

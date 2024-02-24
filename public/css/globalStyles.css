@@ -19,9 +19,13 @@
   position: relative;
   display: block;
   width: calc(122% + 1.3px);
-  height: 215px;
+  height: 120px;
 }
-
+@media (min-width: 768px) {
+  .custom-shape-divider-bottom-1708198882 svg {
+    height: 215px;
+  }
+}
 .custom-shape-divider-bottom-1708198882 .shape-fill {
   fill: #856cc9;
 }

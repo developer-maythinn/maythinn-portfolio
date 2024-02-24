@@ -10,7 +10,7 @@ import {
 import React from "react";
 import MenuComponent from "./MenuComponent";
 
-const pages = ["Home", "About", "Skills", "Project", "Contact"];
+const pages = ["Home", "About", "Skills", "Projects", "Contact"];
 
 function CustomNav() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -39,7 +39,7 @@ function CustomNav() {
           justifyContent: { xs: "flex-end", md: "initial" },
         }}
       >
-        <MenuComponent></MenuComponent>
+        <MenuComponent pages={pages}></MenuComponent>
         {/* <IconButton
           size="large"
           aria-label="account of current user"
