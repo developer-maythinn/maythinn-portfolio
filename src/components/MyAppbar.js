@@ -1,4 +1,4 @@
-import { Container } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Image from "next/image";
@@ -27,34 +27,37 @@ function MyAppBar() {
 
   return (
     <AppBar position="static" color="transparent" variant="dense">
-      <Container maxWidth="xl">
+      <Container sx={{ width: { md: "80%" } }}>
         <Toolbar
           disableGutters
           sx={{
-            // justifyContent: "space-between",
+            justifyContent: "space-between",
             justifyContent: "center",
             // mt: 3,
             flexDirection: { xs: "row-reverse", md: "row" },
           }}
         >
-          {/* <Image
-            src="/secretary-bw.png"
-            // layout="responsive"
-            width={30}
-            height={30}
-            alt="Picture of the author"
-          /> */}
-          {/* <MainTitle
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+            <Image
+              src="/secretary-bw.png"
+              // layout="responsive"
+              width={30}
+              height={30}
+              alt="Picture of the author"
+            />
+          </Box>
+
+          <MainTitle
             title="MAY THINN"
             customStyles={{ display: { xs: "none", md: "flex" }, ml: 2 }}
-          ></MainTitle> */}
+          ></MainTitle>
           <CustomNav></CustomNav>
-          {/* <MainTitle
+          <MainTitle
             title="MAY THINN"
             customStyles={{
               display: { xs: "flex", md: "none" },
             }}
-          ></MainTitle> */}
+          ></MainTitle>
         </Toolbar>
       </Container>
     </AppBar>

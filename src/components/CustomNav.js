@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
+import MenuComponent from "./MenuComponent";
 
 const pages = ["Home", "About", "Skills", "Project", "Contact"];
 
@@ -34,11 +35,12 @@ function CustomNav() {
       <Box
         sx={{
           flexGrow: 1,
-          display: { xs: "flex", sm: "none" },
+          display: { xs: "flex", md: "none" },
           justifyContent: { xs: "flex-end", md: "initial" },
         }}
       >
-        <IconButton
+        <MenuComponent></MenuComponent>
+        {/* <IconButton
           size="large"
           aria-label="account of current user"
           aria-controls="menu-appbar"
@@ -47,9 +49,9 @@ function CustomNav() {
           color="inherit"
         >
           <MenuIcon />
-        </IconButton>
+        </IconButton> */}
 
-        <Menu
+        {/* <Menu
           id="menu-appbar"
           anchorEl={anchorElNav}
           anchorOrigin={{
@@ -68,20 +70,20 @@ function CustomNav() {
           }}
         >
           {pages.map((page, index) => (
-            // <React.Fragment key={index}>
-            <MenuItem key={index} onClick={handleCloseNavMenu}>
-              <Typography textAlign="center">{page}</Typography>
-            </MenuItem>
-            // </React.Fragment>
+            <React.Fragment key={index}>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">{page}</Typography>
+              </MenuItem>
+            </React.Fragment>
           ))}
-        </Menu>
+        </Menu> */}
       </Box>
       <Box
         sx={{
           flexGrow: 1,
-          display: { xs: "none", sm: "flex" },
+          display: { xs: "none", md: "flex" },
           // display: "flex",
-          justifyContent: { sm: "center" },
+          justifyContent: { sm: "flex-end" },
         }}
       >
         {pages.map((page, index) => (

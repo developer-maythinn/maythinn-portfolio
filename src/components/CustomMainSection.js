@@ -109,8 +109,10 @@ export default function CustomMainSection(props) {
                 sx={{ lineHeight: "28px", pt: 1, textIndent: 30, fontSize: 14 }}
               >
                 I am a Senior Frontend Developer with over 6 years experience in
-                building websites using with <TypoLang>React js</TypoLang> and{" "}
-                <TypoLang>Next js</TypoLang> . And also a founder of
+                building websites using with{" "}
+                <TypoLang component="span">React js</TypoLang> and{" "}
+                <TypoLang component="span">Next js</TypoLang> . And also a
+                founder of
                 <Link
                   target="_blank"
                   sx={{
