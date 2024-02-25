@@ -43,7 +43,7 @@ function Footer() {
             }}
           >
             <Image
-              src="/May-Thinn-Khine.jpeg"
+              src="/images/May-Thinn-Khine.jpeg"
               layout="responsive"
               width={100}
               height={100}

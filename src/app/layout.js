@@ -10,15 +10,12 @@ export const metadata = {
   siteName: "May Thinn Khine's Portfolio",
 
   icons: {
-    icon: "/May-Thinn-Khine1.jpg",
-  },
-  icons: {
-    icon: "/May-Thinn-Khine1.jpg",
-    shortcut: "/May-Thinn-Khine1.jpg",
-    apple: "/May-Thinn-Khine1.jpg",
+    icon: "/images/May-Thinn-Khine.jpeg",
+    shortcut: "/images/May-Thinn-Khine.jpeg",
+    apple: "/images/May-Thinn-Khine.jpeg",
     other: {
       rel: "apple-touch-icon-precomposed",
-      url: "/May-Thinn-Khine1.jpg",
+      url: "/images/May-Thinn-Khine.jpeg",
     },
   },
   openGraph: {
@@ -56,7 +53,6 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
         />
-        <link rel="icon" href="/May-Thinn-Khine.jpeg" sizes="any" />
       </head>
       <body className={poppin.className}>
         <ThemeRegistry>{children}</ThemeRegistry>
