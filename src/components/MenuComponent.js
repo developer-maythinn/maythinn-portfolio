@@ -33,10 +33,14 @@ function MenuComponent() {
         onChange={handleChange}
         inputProps={{ "aria-label": "controlled" }}
         sx={{
+          background: "#fff",
           position: "relative",
           zIndex: 9999,
           "&.Mui-checked": {
             transition: "2s",
+          },
+          "&.MuiCheckbox-root": {
+            background: "#fff",
           },
         }}
         checkedIcon={<CloseIcon />}
@@ -48,9 +52,7 @@ function MenuComponent() {
           className="navigation__checkbox"
           id="navi-toggle"
         />
-        <label htmlFor="navi-toggle" className="navigation__button">
-          <span className="navigation__icon">&nbsp;</span>
-        </label>
+
         <Box
           className="navigation__background"
           sx={{ transform: checked ? "scale(90)" : "scale(0)" }}
@@ -64,6 +66,7 @@ function MenuComponent() {
             opacity: checked ? 1 : 0,
             width: checked ? "100%" : "0",
             zIndex: checked ? 1000 : 0,
+            height: { xs: "100vh", sm: "90vh" },
           }}
         >
           <ul className="navigation__list">

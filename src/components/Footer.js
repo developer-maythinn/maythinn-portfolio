@@ -4,6 +4,7 @@ import React from "react";
 import SocialComponent from "./SocialComponent";
 import MailIcon from "@mui/icons-material/Mail";
 import IconWithText from "./IconWithText";
+import Image from "next/image";
 
 function Footer() {
   let date = new Date();
@@ -13,7 +14,7 @@ function Footer() {
       <Grid
         container
         sx={{
-          height: "35vh",
+          height: "50vh",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -32,6 +33,29 @@ function Footer() {
             alignItems: "center",
           }}
         >
+          <Box
+            sx={{
+              width: { xs: "20vw", sm: "54vw", md: "100%" },
+              height: "auto",
+              margin: "auto",
+              borderRadius: "50%",
+              overflow: "hidden",
+            }}
+          >
+            <Image
+              src="/May-Thinn-Khine.jpeg"
+              layout="responsive"
+              width={100}
+              height={100}
+              //   sizes="(max-width: 768px) 100vw"
+              alt="Picture of the author"
+              // style={{
+              //   objectFit: "contain",
+              //   // height: "fit-content",
+              //   // width: "100%",
+              // }}
+            />
+          </Box>
           <Typography variant="h5" sx={{ fontWeight: 600 }}>
             Get in touch
           </Typography>
