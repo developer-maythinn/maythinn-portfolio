@@ -3,11 +3,13 @@ import ExperienceSection from "@/components/ExperienceSection";
 import GlassCard from "@/components/GlassCard";
 import ProjectsSection from "@/components/ProjectsSection";
 import SkillSection from "@/components/SkillSection";
-import { Box, Fab } from "@mui/material";
+import { Box, Divider, Fab } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import * as React from "react";
 import { ScrollTop } from "@/components/ScrollTop";
 import Footer from "@/components/Footer";
+import About from "@/components/About";
+import ContactSection from "@/components/ContactSection";
 
 function page(props) {
   return (
@@ -20,7 +22,24 @@ function page(props) {
         <GlassCard />
       </Box>
       <SkillSection></SkillSection>
+      <Divider
+        sx={{
+          background: "rgba(133, 108, 201, 0.1)",
+          height: 7,
+          outline: 0,
+          border: 0,
+        }}
+      ></Divider>
 
+      <About />
+      <Divider
+        sx={{
+          background: "rgba(133, 108, 201, 0.1)",
+          height: 7,
+          outline: 0,
+          border: 0,
+        }}
+      ></Divider>
       <Box
         sx={{
           position: "relative",
@@ -49,6 +68,7 @@ function page(props) {
       >
         <ProjectsSection></ProjectsSection>
       </Box>
+      <ContactSection />
       <Footer></Footer>
       <ScrollTop {...props}>
         <Fab size="small" aria-label="scroll back to top" color="primary">

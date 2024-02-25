@@ -23,10 +23,9 @@ export const ProgressBarComponent = ({
           }}
         />
       )}
-
       <LinearProgress
         variant="determinate"
-        value={value}
+        value={parseInt(value) || 0}
         sx={{
           backgroundColor: "#F0F1F2",
           width: "100%",

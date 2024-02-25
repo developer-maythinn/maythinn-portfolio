@@ -1,6 +1,6 @@
 "use client";
 import styled from "@emotion/styled";
-import { Grid } from "@mui/material";
+import { Button, Grid } from "@mui/material";
 import Box from "@mui/material/Box";
 import Slide from "@mui/material/Slide";
 import Typography from "@mui/material/Typography";
@@ -43,6 +43,20 @@ const TypoLang = styled(Typography)(({ theme }) => ({
   fontWeight: "500",
 }));
 export default function CustomMainSection(props) {
+  const handleClick = async () => {
+    const response = await fetch("/api/file");
+
+    if (response.status !== 200) {
+      console.error(response.status, response.statusText);
+    }
+
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "filename.txt";
+    link.click();
+  };
   return (
     <React.Fragment>
       <MyAppBar />
@@ -105,33 +119,31 @@ export default function CustomMainSection(props) {
               >
                 May Thinn Khine
               </Typography>
-              <Typography
-                variant="subtitle1"
-                component="p"
-                sx={{ lineHeight: "28px", pt: 1, textIndent: 30, fontSize: 14 }}
-              >
-                I am a Senior Frontend Developer with over 6 years experience in
-                building websites using with{" "}
-                <TypoLang component="span">React js</TypoLang> and{" "}
-                <TypoLang component="span">Next js</TypoLang> . And also a
-                founder of
-                <Link
-                  target="_blank"
-                  sx={{
-                    fontSize: 16,
-                    fontWeight: "700",
-                    pl: 1,
-                    textDecoration: "none",
-                    color: "#856cc9",
-                  }}
-                  href="https://www.facebook.com/profile.php?id=100078891341055"
-                >
-                  MT Coding - Tech
-                </Link>
-                . Let's collaborate and create exceptional digital experiences
-                together.
-              </Typography>
-              {/* **************** for social ********************** */}
+              <Grid container>
+                <Grid item xs={12}>
+                  <Typography
+                    variant="h6"
+                    component="h1"
+                    sx={{ pt: 1, fontSize: { xs: "1.1rem", sm: "1.3rem" } }}
+                    //
+                  >
+                    Senior Frontend Developer
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography
+                    variant="subtitle2"
+                    component="h1"
+                    sx={{
+                      pt: 1,
+                      // fontSize: { xs: "0.8rem", sm: "1rem" },
+                    }}
+                  >
+                    React JS | Next JS
+                  </Typography>
+                </Grid>
+              </Grid>
+
               <Box
                 sx={{
                   mt: 3,
@@ -139,7 +151,17 @@ export default function CustomMainSection(props) {
                   justifyContent: { xs: "center", md: "flex-start" },
                 }}
               >
-                <SocialComponent />
+                <Button variant="contained">
+                  <a
+                    href={"/May-Thinn-CV.pdf"}
+                    style={{ color: "inherit", textDecoration: "none" }}
+                    download
+                  >
+                    Download CV
+                  </a>
+                </Button>
+
+                {/* <SocialComponent /> */}
               </Box>
             </Box>
           </Grid>

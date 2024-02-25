@@ -188,4 +188,5 @@ export const pages = [
   { title: "Skills", url: "#skills" },
   { title: "Work", url: "#work" },
   { title: "Projects", url: "#projects" },
+  { title: "Contact", url: "#contact" },
 ];
