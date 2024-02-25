@@ -50,7 +50,7 @@
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 0.5rem;
   background-image: radial-gradient(#856cc9, #5643fa);
@@ -76,8 +76,7 @@
   text-align: center;
   width: 100%;
 }
-.navigation__link:link,
-.navigation__link:visited {
+.navigation__link {
   display: inline-block;
   font-size: 3rem;
   font-weight: 300;
@@ -98,56 +97,4 @@
 .navigation__link:active {
   background-position: 100%;
   color: #2998ff;
-  transform: translateX(1rem);
-}
-.navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(90);
-}
-.navigation__checkbox:checked ~ .navigation__nav {
-  opacity: 1;
-  width: 100%;
-  z-index: 1500;
-}
-.navigation__icon {
-  position: relative;
-
-  margin-top: 1.2rem;
-}
-.navigation__icon,
-.navigation__icon::before,
-.navigation__icon::after {
-  width: 1rem;
-  height: 2px;
-  background-color: #333;
-  display: inline-block;
-}
-.navigation__icon::before,
-.navigation__icon::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  transition: all 0.2s;
-}
-.navigation__icon::before {
-  top: -0.3rem;
-}
-.navigation__icon::after {
-  bottom: -0.3rem;
-}
-.navigation__button:hover .navigation__icon::before {
-  top: -0.3rem;
-}
-.navigation__button:hover .navigation__icon::after {
-  bottom: -0.3rem;
-}
-.navigation__checkbox:checked + .navigation__button .navigation__icon {
-  background-color: transparent;
-}
-.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
-  transform: rotate(135deg);
-  top: 0;
-}
-.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
-  transform: rotate(-135deg);
-  bottom: 0;
 }
