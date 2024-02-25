@@ -81,8 +81,9 @@ export default function ExperienceSection() {
                     <TimelineSeparator>
                       <TimelineDot
                         sx={{
-                          width: 50,
-                          height: 50,
+                          position: "relative",
+                          width: "50px",
+                          height: "50px",
                           // p: 1,
                           background: item.bgColor || "white",
                           overflow: "hidden",
@@ -90,11 +91,10 @@ export default function ExperienceSection() {
                       >
                         <Image
                           src={item.imgSrc}
-                          layout="responsive"
-                          width={50}
-                          height={50}
-                          // sizes="(max-width: 768px) 100vw"
-                          alt="Picture of the author"
+                          fill
+                          sizes="500px"
+                          alt="Picture of the company"
+                          style={{ objectFit: "contain" }}
                         />
                       </TimelineDot>
                       <TimelineConnector />

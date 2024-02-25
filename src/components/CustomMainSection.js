@@ -143,28 +143,29 @@ export default function CustomMainSection(props) {
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={12} md={4}>
-            <Box
-              sx={{
-                width: { xs: "85vw", sm: "54vw", md: "100%" },
-                height: "auto",
-                margin: "auto",
+          <Grid
+            item
+            xs={12}
+            md={4}
+            sx={{ display: "flex", justifyContent: "center" }}
+          >
+            <div
+              style={{
+                position: "relative",
+                width: "800px",
+                height: "350px",
               }}
             >
               <Image
-                src="/girl.png"
-                layout="responsive"
-                width={500}
-                height={500}
-                sizes="(max-width: 768px) 100vw"
+                src={"/girl.png"}
                 alt="Picture of the author"
-                // style={{
-                //   objectFit: "contain",
-                //   // height: "fit-content",
-                //   // width: "100%",
-                // }}
+                sizes="500px"
+                fill
+                style={{
+                  objectFit: "contain",
+                }}
               />
-            </Box>
+            </div>
           </Grid>
         </Grid>
       </Box>

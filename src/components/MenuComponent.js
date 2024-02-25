@@ -73,12 +73,12 @@ function MenuComponent() {
             {pages.map((page, index) => (
               <React.Fragment key={index}>
                 <li className="navigation__item">
-                  <a
+                  <div
                     onClick={(e) => handleClick(e, page.url)}
                     className="navigation__link"
                   >
                     {page.title}
-                  </a>
+                  </div>
                 </li>
               </React.Fragment>
             ))}

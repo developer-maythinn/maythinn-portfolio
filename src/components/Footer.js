@@ -36,24 +36,22 @@ function Footer() {
           <Box
             sx={{
               width: { xs: "20vw", sm: "14vw", md: "8vw" },
-              height: "auto",
+              height: { xs: "20vw", sm: "14vw", md: "8vw" },
               margin: "auto",
               borderRadius: "50%",
               overflow: "hidden",
+              position: "relative",
+              mb: 2,
             }}
           >
             <Image
               src="/images/May-Thinn-Khine.jpeg"
-              layout="responsive"
-              width={100}
-              height={100}
-              //   sizes="(max-width: 768px) 100vw"
+              fill
               alt="Picture of the author"
-              // style={{
-              //   objectFit: "contain",
-              //   // height: "fit-content",
-              //   // width: "100%",
-              // }}
+              sizes="500px"
+              style={{
+                objectFit: "contain",
+              }}
             />
           </Box>
           <Typography variant="h5" sx={{ fontWeight: 600 }}>
