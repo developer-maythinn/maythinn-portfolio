@@ -35,7 +35,7 @@ function Footer() {
         >
           <Box
             sx={{
-              width: { xs: "20vw", sm: "54vw", md: "100%" },
+              width: { xs: "20vw", sm: "14vw", md: "8vw" },
               height: "auto",
               margin: "auto",
               borderRadius: "50%",
