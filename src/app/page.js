@@ -7,6 +7,7 @@ import { Box, Fab } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import * as React from "react";
 import { ScrollTop } from "@/components/ScrollTop";
+import Footer from "@/components/Footer";
 
 function page(props) {
   return (
@@ -48,6 +49,7 @@ function page(props) {
       >
         <ProjectsSection></ProjectsSection>
       </Box>
+      <Footer></Footer>
       <ScrollTop {...props}>
         <Fab size="small" aria-label="scroll back to top" color="primary">
           <KeyboardArrowUpIcon />

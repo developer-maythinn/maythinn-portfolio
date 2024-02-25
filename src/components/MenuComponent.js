@@ -12,8 +12,8 @@ function MenuComponent() {
   const handleChange = (event) => {
     setChecked(event.target.checked);
   };
-  console.log(checked);
   const router = useRouter();
+
   const handleClick = (e, href) => {
     e.preventDefault();
     setChecked(false);
@@ -48,7 +48,7 @@ function MenuComponent() {
           className="navigation__checkbox"
           id="navi-toggle"
         />
-        <label for="navi-toggle" className="navigation__button">
+        <label htmlFor="navi-toggle" className="navigation__button">
           <span className="navigation__icon">&nbsp;</span>
         </label>
         <Box
@@ -63,7 +63,7 @@ function MenuComponent() {
           sx={{
             opacity: checked ? 1 : 0,
             width: checked ? "100%" : "0",
-            zIndex: 1500,
+            zIndex: checked ? 1000 : 0,
           }}
         >
           <ul className="navigation__list">

@@ -7,28 +7,19 @@ import {
   MenuItem,
   Typography,
 } from "@mui/material";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { pages } from "./dummyData";
 import MenuComponent from "./MenuComponent";
 
 function CustomNav() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const router = useRouter();
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
+  const handleClick = (e, href) => {
+    e.preventDefault();
+    router.push(href);
   };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
   return (
     <>
       <Box
@@ -39,56 +30,18 @@ function CustomNav() {
         }}
       >
         <MenuComponent></MenuComponent>
-        {/* <IconButton
-          size="large"
-          aria-label="account of current user"
-          aria-controls="menu-appbar"
-          aria-haspopup="true"
-          onClick={handleOpenNavMenu}
-          color="inherit"
-        >
-          <MenuIcon />
-        </IconButton> */}
-
-        {/* <Menu
-          id="menu-appbar"
-          anchorEl={anchorElNav}
-          anchorOrigin={{
-            vertical: "bottom",
-            horizontal: "left",
-          }}
-          keepMounted
-          transformOrigin={{
-            vertical: "top",
-            horizontal: "left",
-          }}
-          open={Boolean(anchorElNav)}
-          onClose={handleCloseNavMenu}
-          sx={{
-            display: { xs: "block", md: "none" },
-          }}
-        >
-          {pages.map((page, index) => (
-            <React.Fragment key={index}>
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">{page}</Typography>
-              </MenuItem>
-            </React.Fragment>
-          ))}
-        </Menu> */}
       </Box>
       <Box
         sx={{
           flexGrow: 1,
           display: { xs: "none", md: "flex" },
-          // display: "flex",
           justifyContent: { sm: "flex-end" },
         }}
       >
         {pages.map((page, index) => (
           <React.Fragment key={index}>
             <Button
-              onClick={handleCloseNavMenu}
+              onClick={(e) => handleClick(e, page.url)}
               sx={{
                 my: 2,
                 mx: 1,

@@ -71,7 +71,6 @@ export default function ExperienceSection() {
               items.map((item, index) => {
                 return (
                   <TimelineItem key={index}>
-                    {console.log("isSmallScreen", isSmallScreen)}
                     {!isSmallScreen ? (
                       <TimelineOppositeContent>
                         <Typography variant="subtitle2" sx={{ mt: 2.5 }}>
