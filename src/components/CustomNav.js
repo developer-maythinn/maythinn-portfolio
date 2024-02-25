@@ -8,9 +8,8 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
+import { pages } from "./dummyData";
 import MenuComponent from "./MenuComponent";
-
-const pages = ["Home", "About", "Skills", "Projects", "Contact"];
 
 function CustomNav() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -39,7 +38,7 @@ function CustomNav() {
           justifyContent: { xs: "flex-end", md: "initial" },
         }}
       >
-        <MenuComponent pages={pages}></MenuComponent>
+        <MenuComponent></MenuComponent>
         {/* <IconButton
           size="large"
           aria-label="account of current user"
@@ -100,7 +99,7 @@ function CustomNav() {
                 fontSize: 16,
               }}
             >
-              {page}
+              {page.title}
             </Button>
           </React.Fragment>
         ))}

@@ -30,6 +30,7 @@ function ProjectsSection() {
         caption={"Private and Public Projects"}
         title={"My Projects"}
         customTitleStyles={{ color: "#fafafa", mb: 6 }}
+        id="projects"
       >
         <Grid
           container

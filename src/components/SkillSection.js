@@ -58,7 +58,11 @@ function SkillSection() {
   ];
   return (
     <>
-      <ParentSection caption={"Technical level"} title={"My Expertise Area"}>
+      <ParentSection
+        caption={"Technical level"}
+        title={"My Expertise Area"}
+        id="skills"
+      >
         <Grid container sx={{ mt: 6 }} spacing={3}>
           {skills &&
             skills.length > 0 &&

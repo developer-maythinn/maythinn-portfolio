@@ -181,3 +181,11 @@ export const projects = [
     github: "https://github.com/developer-maythinn/simple-html-scss-template",
   },
 ];
+
+export const pages = [
+  { title: "Home", url: "/" },
+  { title: "About", url: "#about" },
+  { title: "Skills", url: "#skills" },
+  { title: "Work", url: "#work" },
+  { title: "Projects", url: "#projects" },
+];

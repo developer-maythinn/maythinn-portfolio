@@ -1,10 +1,10 @@
 import { Box, Container } from "@mui/material";
 import SectionTitle from "./SectionTitle";
 
-function ParentSection({ children, caption, title, customTitleStyles }) {
+function ParentSection({ children, caption, title, customTitleStyles, id }) {
   return (
     <>
-      <Container>
+      <Container id={id}>
         <Box
           sx={{
             width: "100%",

@@ -1,7 +1,9 @@
 import { Input } from "@mui/material";
+import Link from "next/link";
 import React from "react";
+import { pages } from "./dummyData";
 
-function MenuComponent({ pages }) {
+function MenuComponent() {
   return (
     <div className="navigation">
       <input
@@ -18,9 +20,9 @@ function MenuComponent({ pages }) {
           {pages.map((page, index) => (
             <React.Fragment key={index}>
               <li className="navigation__item">
-                <a href="#" className="navigation__link">
-                  {page}
-                </a>{" "}
+                <Link href={page.url} className="navigation__link">
+                  {page.title}
+                </Link>
               </li>
             </React.Fragment>
           ))}

@@ -59,7 +59,11 @@ export default function ExperienceSection() {
   const timelinePosition = isSmallScreen ? "right" : "alternate";
 
   return (
-    <ParentSection caption={"Why Choose me"} title={"My Work Experience"}>
+    <ParentSection
+      caption={"Why Choose me"}
+      title={"My Work Experience"}
+      id="work"
+    >
       <Grid container sx={{ my: 6 }}>
         <Grid item>
           <Timeline position={timelinePosition} sx={{ p: { xs: 0, sm: 2 } }}>

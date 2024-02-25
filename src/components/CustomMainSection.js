@@ -51,6 +51,8 @@ export default function CustomMainSection(props) {
           height: { xs: "95vh", sm: "74vh" },
           display: "flex",
           alignItems: "center",
+          // zIndex: 9999,
+          position: "relative",
         }}
       >
         <Grid
