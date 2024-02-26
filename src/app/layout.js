@@ -4,10 +4,10 @@ import "../../public/css/globalStyles.css";
 export const metadata = {
   metadataBase: new URL("https://maythinn-portfolio.vercel.app"),
 
-  title: "May Thinn Khine's Portfolio",
+  title: "May Thinn Khine Portfolio",
   description:
-    "May Thinn Khine's Portfolio by react js, next js and material UI.",
-  siteName: "May Thinn Khine's Portfolio",
+    "May Thinn Khine Portfolio by react js, next js and material UI.",
+  siteName: "May Thinn Khine Portfolio",
 
   icons: {
     icon: "/images/May-Thinn-Khine.jpeg",
@@ -19,8 +19,9 @@ export const metadata = {
     },
   },
   openGraph: {
-    images: "/May-Thinn-Khine.jpeg",
-    title: "May Thinn Khine's Portfolio",
+    images: "/images/May-Thinn-Khine.jpeg",
+    title: "May Thinn Khine Portfolio",
+    description: "Senior Frontend Developer",
     url: "https://maythinn-portfolio.vercel.app",
     locale: "en_US",
     type: "website",

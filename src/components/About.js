@@ -129,8 +129,8 @@ function About() {
                     textAlign: "left",
                   }}
                 >
-                  I am a Senior Frontend Developer with over 6 years experience
-                  in building websites using with{" "}
+                  I am a Senior Frontend Developer with 8 years experience in
+                  building websites using with{" "}
                   <TypoLang component="span">React js</TypoLang> and{" "}
                   <TypoLang component="span">Next js</TypoLang>. And also a
                   founder of
