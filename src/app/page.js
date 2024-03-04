@@ -75,6 +75,16 @@ function page(props) {
           <KeyboardArrowUpIcon />
         </Fab>
       </ScrollTop>
+      <ul class="bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </>
   );
 }

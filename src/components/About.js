@@ -17,7 +17,7 @@ const TypoLang = styled(Typography)(({ theme }) => ({
 }));
 function About() {
   return (
-    <>
+    <Box sx={{ position: "relative" }}>
       <ParentSection
         caption={"About Me and Education"}
         title={"About Me"}
@@ -183,7 +183,17 @@ function About() {
           </Grid>
         </Box>
       </ParentSection>
-    </>
+      <ul class="bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </Box>
   );
 }
 

@@ -63,7 +63,16 @@ function SkillSection() {
         title={"My Expertise Area"}
         id="skills"
       >
-        <Grid container sx={{ mt: 6 }} spacing={3}>
+        <Grid
+          container
+          sx={{
+            mt: 6,
+            position: "relative",
+            zIndex: 999,
+            background: "linear-gradient(to top, #fff 70%, transparent)",
+          }}
+          spacing={3}
+        >
           {skills &&
             skills.length > 0 &&
             skills.map((skill, index) => {
