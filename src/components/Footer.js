@@ -16,6 +16,7 @@ function Footer() {
           alignItems: "center",
           color: "#fafafa",
           background: "#352b50",
+          py: 2,
         }}
       >
         <Grid item xs={12}>

@@ -11,12 +11,13 @@ function ContactSection() {
       <Grid
         container
         sx={{
-          height: "60vh",
+          // height: "60vh",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           color: "#fafafa",
           background: "#4f4078",
+          py: 8,
         }}
       >
         <Grid
