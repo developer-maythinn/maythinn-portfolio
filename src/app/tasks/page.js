@@ -1,3 +1,4 @@
+"use client";
 import Timeline from "@mui/lab/Timeline";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
@@ -7,6 +8,7 @@ import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import { Box, Tooltip, Typography } from "@mui/material";
 import { GitHub as GitHubIcon, Code as CodeIcon } from "@mui/icons-material";
+import { useEffect } from "react";
 
 const items = [
   {
@@ -46,8 +48,28 @@ const experiences = [
   },
 ];
 export default function OppositeContentTimeline() {
+  const A = () => {
+    useEffect(() => {
+      console.log("A");
+    }, []);
+    return <></>;
+  };
+  const B = () => {
+    useEffect(() => {
+      console.log("B");
+    }, []);
+    return <C />;
+  };
+  const C = () => {
+    useEffect(() => {
+      console.log("C");
+    }, []);
+    return <></>;
+  };
   return (
     <Box id="experience" sx={{ py: 8 }}>
+      <A></A>
+      <B></B>
       <Timeline>
         {experiences.map((experience, index) => (
           <TimelineItem key={index}>

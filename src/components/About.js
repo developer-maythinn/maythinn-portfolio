@@ -21,7 +21,9 @@ function About() {
       <ParentSection
         caption={"About Me and Education"}
         title={"About Me"}
-        customTitleStyles={{ mb: { xs: 6, sm: 0 } }}
+        customTitleStyles={{
+          mb: { xs: 6, sm: 0 },
+        }}
         id="about"
       >
         <Box
@@ -30,6 +32,7 @@ function About() {
             display: "flex",
             alignItems: "center",
             position: "relative",
+            zIndex: 1,
           }}
         >
           <Grid
@@ -183,7 +186,7 @@ function About() {
           </Grid>
         </Box>
       </ParentSection>
-      <ul class="bubbles">
+      <ul className="bubbles">
         <li></li>
         <li></li>
         <li></li>

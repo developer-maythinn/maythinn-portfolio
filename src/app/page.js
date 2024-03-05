@@ -75,7 +75,7 @@ function page(props) {
           <KeyboardArrowUpIcon />
         </Fab>
       </ScrollTop>
-      <ul class="bubbles">
+      <ul className="bubbles">
         <li></li>
         <li></li>
         <li></li>
