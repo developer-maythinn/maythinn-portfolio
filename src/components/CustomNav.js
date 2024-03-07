@@ -50,6 +50,8 @@ function CustomNav() {
                 textTransform: "capitalize",
                 fontWeight: "bold",
                 fontSize: 16,
+                position: "relative",
+                zIndex: 999,
               }}
             >
               {page.title}
