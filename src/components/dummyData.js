@@ -152,6 +152,7 @@ export const projects = [
       "This is a entertainment progressive web app. A beta version of duwun media.",
     techStack: [
       "Vue",
+      "nuxt",
       "Pwa",
       "vuetify",
       "mobile version",
