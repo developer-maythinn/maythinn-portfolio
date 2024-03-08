@@ -165,7 +165,7 @@ function About() {
                 >
                   <IconWithText
                     icon="school"
-                    text="Bachelor of Arts (West Yangon University)"
+                    text="Bachelor of Arts (Yangon University of Distance Education)"
                   />
 
                   <IconWithText
