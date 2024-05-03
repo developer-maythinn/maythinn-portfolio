@@ -70,8 +70,8 @@ function ContactSection() {
             }}
           >
             <IconWithText icon="mail" text="developer.maythinn@gmail.com" />
-            <IconWithText icon="phone" text="+959798383201" />
-            <IconWithText icon="place" text="Yangon, Myanmar" />
+            <IconWithText icon="phone" text="+66612269670  || +959798383201" />
+            <IconWithText icon="place" text="Bangkok, Thailand" />
           </Box>
 
           <Box

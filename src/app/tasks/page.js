@@ -48,29 +48,58 @@ const experiences = [
   },
 ];
 export default function OppositeContentTimeline() {
-  const A = () => {
-    useEffect(() => {
-      console.log("A");
-    }, []);
-    return <></>;
-  };
-  const B = () => {
-    useEffect(() => {
-      console.log("B");
-    }, []);
-    return <C />;
-  };
-  const C = () => {
-    useEffect(() => {
-      console.log("C");
-    }, []);
-    return <></>;
-  };
+  // const A = () => {
+  //   useEffect(() => {
+  //     console.log("A");
+  //   }, []);
+  //   return <></>;
+  // };
+  // const B = () => {
+  //   useEffect(() => {
+  //     console.log("B");
+  //   }, []);
+  //   return <C />;
+  // };
+  // const C = () => {
+  //   useEffect(() => {
+  //     console.log("C");
+  //   }, []);
+  //   return <></>;
+  // };
+
+  let aa = Array.from({ length: 8 })
+    .map((_, index) => index)
+    .filter((_, index) => index % 2 === 0)
+    .map((id) => ({ id }));
+  console.log(aa);
   return (
     <Box id="experience" sx={{ py: 8 }}>
-      <A></A>
-      <B></B>
-      <Timeline>
+      {/* <A></A>
+      <B></B> */}
+      {/* <div style={{ display: "flex", justifyContent: "center" }}>
+        <div
+          style={{
+            width: "100px",
+            height: "100px",
+            border: "1px solid #000",
+            boxSizing: "border-box",
+            padding: 10,
+          }}
+        >
+          <div
+            style={{
+              width: "80px",
+              height: "80px",
+              border: "1px solid blue",
+              // margin: "10px",
+            }}
+          >
+            Content
+          </div>
+        </div>
+      </div> */}
+
+      {/* <Timeline>
         {experiences.map((experience, index) => (
           <TimelineItem key={index}>
             <TimelineSeparator>
@@ -94,7 +123,7 @@ export default function OppositeContentTimeline() {
             </TimelineContent>
           </TimelineItem>
         ))}
-      </Timeline>
+      </Timeline> */}
     </Box>
   );
 }

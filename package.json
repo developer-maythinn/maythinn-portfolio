@@ -25,6 +25,7 @@
     "framer-motion": "^10.16.4",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "yet-another-react-lightbox": "^3.17.3"
   }
 }
