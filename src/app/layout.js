@@ -1,5 +1,6 @@
 import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
 import "../../public/css/globalStyles.css";
+import Script from "next/script";
 
 export const metadata = {
   metadataBase: new URL("https://maythinn-portfolio.vercel.app"),
@@ -50,6 +51,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+<Script async src="https://www.googletagmanager.com/gtag/js?id=G-G4NP047WFZ"></Script>
+<Script>
+ {` window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G4NP047WFZ');`}
+</Script>
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/icon?family=Material+Icons"

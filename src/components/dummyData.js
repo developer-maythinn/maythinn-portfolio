@@ -1,5 +1,20 @@
 export const projects = [
   {
+    title: "Xtension Website",
+    imgSrc: "/project-img/xtension-jade.vercel.app_.png",
+    description:
+      "This is a portfolio website(Static Website).",
+    techStack: [
+      "HTML",
+      "SASS",
+      "Jquery",
+      "Bootstrap",
+    ],
+    link: "https://xtension-jade.vercel.app/",
+    github: "",
+    slideImages: [],
+  },
+  {
     title: "ONOW Web APP(PWA)",
     imgSrc: "/project-img/onow-pwa.png",
     description:
