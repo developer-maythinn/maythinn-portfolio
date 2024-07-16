@@ -153,7 +153,7 @@ export default function CustomMainSection(props) {
               >
                 <Button variant="contained">
                   <a
-                    href={"/May-Thinn-CV.pdf"}
+                    href={"/MayThinn-2024-update-CV.pdf"}
                     style={{ color: "inherit", textDecoration: "none" }}
                     download
                   >
