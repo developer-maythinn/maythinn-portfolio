@@ -28,6 +28,7 @@ import NextJsImage from "./NextJS-Image";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
+
 function ProjectsSection() {
   const isSmallScreen = useMediaQuery("(max-width:600px)");
   const [open, setOpen] = React.useState(false);
@@ -242,6 +243,15 @@ function ProjectsSection() {
                                 {project && project.link ? "View" : "Private"}
                               </Button>
                             </Link>
+                          ) : project?.slideImages.length > 0 ? (
+                            <Button
+                              size="small"
+                              variant="outlined"
+                              startIcon={<Visibility></Visibility>}
+                              onClick={() => handleImageClick(index)}
+                            >
+                              View
+                            </Button>
                           ) : (
                             <Button
                               size="small"
@@ -250,7 +260,7 @@ function ProjectsSection() {
                               startIcon={<VisibilityOff></VisibilityOff>}
                               sx={{ cursor: "not-allowed" }}
                             >
-                              {project && project.link ? "View" : "Private"}
+                              Private
                             </Button>
                           )}
                         </CardActions>

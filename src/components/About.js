@@ -186,7 +186,7 @@ function About() {
           </Grid>
         </Box>
       </ParentSection>
-      <ul className="bubbles">
+      {/* <ul className="bubbles">
         <li></li>
         <li></li>
         <li></li>
@@ -195,7 +195,7 @@ function About() {
         <li></li>
         <li></li>
         <li></li>
-      </ul>
+      </ul> */}
     </Box>
   );
 }

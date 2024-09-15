@@ -10,7 +10,6 @@ function Footer() {
       <Grid
         container
         sx={{
-          height: "6vh",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",

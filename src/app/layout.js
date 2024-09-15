@@ -51,14 +51,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-<Script async src="https://www.googletagmanager.com/gtag/js?id=G-G4NP047WFZ"></Script>
-<Script>
- {` window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-G4NP047WFZ"></Script>
+      <Script>
+      {` window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)}
+        gtag('js', new Date());
 
-  gtag('config', 'G-G4NP047WFZ');`}
-</Script>
+        gtag('config', 'G-G4NP047WFZ');`}
+      </Script>
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/icon?family=Material+Icons"

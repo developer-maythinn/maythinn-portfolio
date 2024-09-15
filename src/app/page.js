@@ -75,7 +75,7 @@ function page(props) {
           <KeyboardArrowUpIcon />
         </Fab>
       </ScrollTop>
-      <ul className="bubbles">
+      {/* <ul className="bubbles">
         <li></li>
         <li></li>
         <li></li>
@@ -84,7 +84,7 @@ function page(props) {
         <li></li>
         <li></li>
         <li></li>
-      </ul>
+      </ul> */}
     </>
   );
 }
