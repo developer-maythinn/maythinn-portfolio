@@ -16,11 +16,11 @@ import ParentSection from "./ParentSection";
 
 const items = [
   {
-    years: "2022 ~ Present",
+    years: "2022 ~ 2024",
     company: "ONOW MYANMAR",
     position: "Senior Frontend Developer",
     description:
-      "I am currently employed at ONOW MYANMAR, where I serve as a Senior Frontend Developer. In this capacity, I have taken the lead on two projects, leveraging my expertise to drive their successful execution and delivery.",
+      "I employed at ONOW MYANMAR, where I serve as a Senior Frontend Developer. In this capacity, I have taken the lead on three projects, leveraging my expertise to drive their successful execution and delivery.",
     // "During my tenure at ONOW MYANMAR from 2022 to present. Throughout this period, I played a pivotal role in the development of two significant projects: Progressive Web App (PWA) and a Content Management System (CMS).",
     imgSrc: "/company/App-bar-ONOW-Logo.svg",
   },

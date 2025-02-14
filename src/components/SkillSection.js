@@ -14,6 +14,10 @@ function SkillSection() {
       percent: "85",
     },
     {
+      language: "Tailwind CSS",
+      percent: "85",
+    },
+    {
       language: "Material UI",
       percent: "90",
     },
