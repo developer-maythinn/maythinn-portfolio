@@ -22,13 +22,13 @@ function About() {
         caption={"About Me and Education"}
         title={"About Me"}
         customTitleStyles={{
-          mb: { xs: 6, sm: 0 },
+          mb: { xs: 2, sm: 0 },
         }}
         id="about"
       >
         <Box
           sx={{
-            height: { xs: "100vh", sm: "60vh" },
+            // minHeight: "70vh",
             display: "flex",
             alignItems: "center",
             position: "relative",
@@ -44,7 +44,7 @@ function About() {
               justifyContent: "center",
             }}
           >
-            <Grid
+            {/* <Grid
               item
               xs={12}
               md={4}
@@ -76,11 +76,12 @@ function About() {
                     fill
                     style={{
                       objectFit: "contain",
+                     
                     }}
                   />
                 </div>
               </Box>
-            </Grid>
+            </Grid> */}
             <Grid
               item
               xs={12}
@@ -89,21 +90,19 @@ function About() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+              
               }}
             >
               <Box
                 sx={{
-                  p: {
+                  py: {
                     xs: 2,
-                    md: 6,
+                    // md: 6,
                   },
-                  pr: {
-                    xs: 2,
-                    md: "47px",
-                  },
+                
                   textAlign: {
                     xs: "center", // Default value for extra-small screens
-                    md: "left", // Centered text for medium screens and larger
+                   
                   },
                   mt: {
                     xs: 2,
@@ -167,7 +166,10 @@ function About() {
                     icon="school"
                     text="Bachelor of Arts (Yangon University of Distance Education)"
                   />
-
+                  <IconWithText
+                    icon="school"
+                    text="Certified Node JS REST API Development Course (MT Coding - Tech)"
+                  />
                   <IconWithText
                     icon="school"
                     text="Certified Software Engineering Fundamental Course (Fairway Technology)"

@@ -14,6 +14,10 @@ function SkillSection() {
       percent: "85",
     },
     {
+      language: "TypeScript",
+      percent: "80",
+    },
+    {
       language: "Tailwind CSS",
       percent: "85",
     },
@@ -24,6 +28,14 @@ function SkillSection() {
     {
       language: "Token Base UI (Design Token) ",
       percent: "85",
+    },
+    {
+      language: "Node JS",
+      percent: "80",
+    },
+    {
+      language: "PostgreSQL",
+      percent: "70",
     },
     {
       language: "React Native",
